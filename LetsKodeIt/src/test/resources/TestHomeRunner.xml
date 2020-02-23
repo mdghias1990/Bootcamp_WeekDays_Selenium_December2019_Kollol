@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Google Automation Script" parallel="false">
+<suite name="LetsKodeIt Automation Script" parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
@@ -12,10 +12,10 @@
     <!--<parameter name="os_version" value="Sierra"/>-->
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="80"/>
-    <parameter name="url" value="https://www.google.com/"/>
+    <parameter name="url" value="https://learn.letskodeit.com/p/practice"/>
     <test name="Letskodeit Home">
         <classes>
-            <class name="testhome.TestHomePage"></class>
+            <class name="testhomepage.TestHomePage"></class>
 
         </classes>
 

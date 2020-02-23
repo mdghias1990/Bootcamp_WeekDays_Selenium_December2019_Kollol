@@ -13,7 +13,7 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="80"/>
     <parameter name="url" value="https://www.google.com/"/>
-    <test name="Letskodeit Home">
+    <test name="Google Home">
         <classes>
             <class name="testhome.TestHomePage"></class>
 

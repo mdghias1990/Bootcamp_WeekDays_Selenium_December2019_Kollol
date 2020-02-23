@@ -1,9 +1,8 @@
 
 package cucumberrunner;
 
-
-        import io.cucumber.testng.AbstractTestNGCucumberTests;
-        import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {"src/test/FeatureFile/HomePage.feature"},

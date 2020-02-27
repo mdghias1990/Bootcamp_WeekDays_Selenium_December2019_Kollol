@@ -16,6 +16,7 @@ public class HomePage extends WebElementHomePage {
         String expectedText = element.getText();
         Assert.assertEquals(actualText, expectedText);
     }
+
     public static void validatePracticePage() {
         textValidation(practic, "Practice Page");
     }
@@ -37,7 +38,8 @@ public class HomePage extends WebElementHomePage {
     public static WebElement getSelectClassBar() {
         return selectClassBar;
     }
-//drop down
+
+    //drop down
     public static void clickSelectClassBar() {
         getSelectClassBar().click();
     }
@@ -148,6 +150,10 @@ public class HomePage extends WebElementHomePage {
 
 
     public static final String webElemetMouseHover = "//button[@id='mousehover']";
-    @FindBy (xpath = webElemetMouseHover)public static WebElement mouseHover;
-    public static void setMouseHover(){ mouseHoverByXpath(webElemetMouseHover);}
+    @FindBy(xpath = webElemetMouseHover)
+    public static WebElement mouseHover;
+
+    public static void setMouseHover() {
+        mouseHoverByXpath(webElemetMouseHover);
+    }
 }

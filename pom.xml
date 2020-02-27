@@ -147,16 +147,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
                 <configuration>
-                    <!--                        <includes>-->
-                    <!--                            <include>src/test/resources/Runnerfile.xml</include>-->
-                    <!--                        </includes>-->
-                    <suiteXmlFiles>
-                        <suiteXmlFiles>src/test/resources/TestHomeRunner.xml</suiteXmlFiles>
-                        <suiteXmlFiles>src/test/resources/GoogleRunnerFile.xml</suiteXmlFiles>
-                        <!--                        <suiteXmlFiles>target/test-classes/CNNTestRunner.xml</suiteXmlFiles>-->
-                        <!--                        <suiteXmlFiles>target/test-classes/BBCTestRunner.xml</suiteXmlFiles>-->
-                    </suiteXmlFiles>
+                                            <includes>
+                                                <include>TestHomePage.java</include>
+                                            </includes>
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFiles>target/test-Classes/TestHomeRunner.xml</suiteXmlFiles>-->
+<!--&lt;!&ndash;                        <suiteXmlFiles>src/test/resources/GoogleRunnerFile.xml</suiteXmlFiles>&ndash;&gt;-->
+<!--                    </suiteXmlFiles>-->
+
                 </configuration>
             </plugin>
         </plugins>

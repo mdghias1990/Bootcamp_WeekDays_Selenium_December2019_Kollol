@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 public class TestHomePage extends HomePage {
@@ -26,6 +27,20 @@ public class TestHomePage extends HomePage {
     @Test
     public static void clickon() throws InterruptedException {
         driver.findElement(By.xpath(xpathSignUp)).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//input[@id='user_name']")).sendKeys("kollol");
+        sleepFor(2);
+        driver.findElement(By.xpath("//input[@id='user_email']")).sendKeys("kollol@gmail.com");
+        sleepFor(2);
+        driver.findElement(By.xpath("//input[@id='user_password']")).sendKeys("1234");
+        sleepFor(2);
+        driver.findElement(By.xpath("//input[@id='user_password_confirmation']")).sendKeys("1234");
+        sleepFor(2);
+        driver.findElement(By.xpath("//input[@id='user_unsubscribe_from_marketing_emails']")).click();
+        sleepFor(2);
+        driver.findElement(By.xpath("//input[@id='user_agreed_to_terms']")).click();
+        sleepFor(2);
+        driver.findElement(By.xpath("//form[@id='new_user']//center")).click();
         sleepFor(2);
     }
     //Click

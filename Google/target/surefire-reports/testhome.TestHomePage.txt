@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: testhome.TestHomePage
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 21.067 s <<< FAILURE! - in testhome.TestHomePage
+testhome.TestHomePage.testSearchFromDB  Time elapsed: 2.016 s  <<< FAILURE!
+java.sql.SQLSyntaxErrorException: Table 'kolloldb.shuvro' doesn't exist
+	at testhome.TestHomePage.testSearchFromDB(TestHomePage.java:19)
+
+testhome.TestHomePage.testSearchFromExcel  Time elapsed: 1.091 s  <<< FAILURE!
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at testhome.TestHomePage.testSearchFromExcel(TestHomePage.java:25)
+
